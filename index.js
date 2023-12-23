@@ -1,12 +1,18 @@
-/* index.js 2023-06-17 */
+/* index.js 2023-12-11 */
+
+require('dotenv').config();
 
 // require and instantiate express
 //    const app = require('express')()
 // require and instantiate express
-var express = require('express');
-var app = express();
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const crypto = require('crypto');
+const app = express();
+
 // initializes as a function handler for the HTTP server
-var http = require('http').createServer(app);
+const http = require('http').createServer(app);
 
 // define the folder to serve with static content
 app.use(express.static(__dirname + '/'));
@@ -16,7 +22,7 @@ app.set('view engine', 'ejs')
 // index page
 app.get('/', function(req, res) {
   res.render('index', {
-    name : "E.V.I. Games",
+    name : "La mia guida di Brescia",
     navlink : "home"
   });
 });
@@ -37,8 +43,17 @@ app.get('/recover', function(req, res) {
   });
 });
 
+// login page
+app.get('/login', function(req, res) {
+  res.render('login', {
+    name : "Login",
+    navlink : "login"
+  });
+});
+
 
 // -------------------------------------------------------------------
-// server runs on port 3000 (this will be used by the reverse proxy)
-http.listen(3000)
-console.log('index.js running on port 3000')
+// run your application on PORT specified in env file
+app.listen(process.env.PORT, () => {
+    console.log("Server is running on port : " + process.env.PORT)
+});
