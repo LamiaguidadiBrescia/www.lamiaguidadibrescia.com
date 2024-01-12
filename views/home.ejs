@@ -1,4 +1,4 @@
-<!-- views/games.ejs -->
+<!-- views/home.ejs -->
 
 <%- include('partials/head'); %>
 
@@ -6,11 +6,19 @@
 
 <%- include('partials/header'); %>
 
+<div class="row w-50 mx-auto">
+  <video class="object-fit-scale" autoplay loop muted>
+    <source src="images/video.mp4" type="video/mp4">Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
 <div class="row pt-3 pb-5">
   <div class="col"></div>
   
   <div class="col-sm-10">
-    <h1>Games by E.V.I.</h1>
+    <h1>La mia guida di Brescia</h1>
     <br>
 
       <!-- BS Carousel to choose Twitter user and pass it on as post-->
@@ -31,7 +39,6 @@
             <div class="carousel-caption user-carousel-caption">
               <h5>Song Dash</h5>
               <p>Released, 2 copies sold</p>
-              <a href="https://team-bean.itch.io/song-dash" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Go to Itch.io page</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -69,7 +76,6 @@
 
       <!-- close userCarousel -->  
       </div>
-
 
   </div>
   

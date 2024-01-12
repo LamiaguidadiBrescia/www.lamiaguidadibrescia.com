@@ -5,35 +5,62 @@
 <div class="row pt-3 pb-5">
 <header>
 <div class="col-sm-12">
-  <nav class="nav nav-masthead justify-content-center float-md-end">
+  <nav class="nav nav-masthead justify-content-center">
   
   <% if (navlink == "home") { %>
-      <a class="nav-link active" aria-current="page" href="/">Home</a>
+      <a class="nav-link active" aria-current="page" href="/"><%= structure.navbar.homepage[lang] %></a>
   <%} else { %>
-      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/"><%= structure.navbar.homepage[lang] %></a>
   <% } %>
   
-  <% if (navlink == "games") { %>
-      <a class="nav-link active" aria-current="page" href="/games">Games</a>
+  <% if (navlink == "guidaperte") { %>
+      <a class="nav-link active" aria-current="page" href="/games"><%= structure.navbar.page1[lang] %></a>
   <%} else { %>
-      <a class="nav-link" href="/games">Games</a>
+      <a class="nav-link" href="/guidaperte"><%= structure.navbar.page1[lang] %></a>
   <% } %>
   
-  <% if (navlink == "recover") { %>
-      <a class="nav-link active" aria-current="page" href="/recover">Recover</a>
+  <% if (navlink == "calendario") { %>
+      <a class="nav-link active" aria-current="page" href="/calendario"><%= structure.navbar.page2[lang] %></a>
   <%} else { %>
-      <a class="nav-link" href="/recover">Recover</a>
+      <a class="nav-link" href="/calendario"><%= structure.navbar.page2[lang] %></a>
   <% } %>
   
-  <% if (navlink == "login") { %>
-      <a class="nav-link active" aria-current="page" href="/login">Login</a>
+  <% if (navlink == "itinerari") { %>
+      <a class="nav-link active" aria-current="page" href="/itinerari"><%= structure.navbar.page3[lang] %></a>
   <%} else { %>
-      <a class="nav-link" href="/login">Login</a>
+      <a class="nav-link" href="/itinerari"><%= structure.navbar.page3[lang] %></a>
   <% } %>
 
+  <% if (navlink == "evidenza") { %>
+      <a class="nav-link active" aria-current="page" href="/evidenza"><%= structure.navbar.page4[lang] %></a>
+  <%} else { %>
+      <a class="nav-link" href="/evidenza"><%= structure.navbar.page4[lang] %></a>
+  <% } %>
+  
+  <% if (navlink == "regalavisita") { %>
+      <a class="nav-link active" aria-current="page" href="/regalavisita"><%= structure.navbar.page5[lang] %></a>
+  <%} else { %>
+      <a class="nav-link" href="/regalavisita"><%= structure.navbar.page5[lang] %></a>
+  <% } %>
+  
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> <i class="fas fa-globe"></i> <%= structure.navbar.page6[lang] %></a>
+  <ul class="dropdown-menu btn-transparent">
+    <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('IT')">Italiano</button></li>
+    <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('ES')">Español</button></li>
+    <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('PT')">Português</button></li>
+  </ul>
+    
   </nav>
 </div>
 </header>
 </div>
 
-
+<script>
+function setLanguage(lang) {
+  let myCookie = "language="+lang;
+  console.log(myCookie);
+  document.cookie = myCookie;
+  location.reload();
+  return false;
+}
+</script>

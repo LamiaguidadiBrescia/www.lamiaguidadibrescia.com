@@ -1,0 +1,26 @@
+{
+    "homepage": [
+        "home",
+        "casa"
+    ],
+    "page1": [
+        "Una guida per te TEST",
+        "Una guida por te TEST"
+    ],
+    "page2": [
+        "Il Calendario",
+        "El calendario"
+    ],
+    "page3": [
+        "Gli itinerari",
+        "Los itinerarios"
+    ],
+    "page4": [
+        "In evidenza",
+        "In evidencia"
+    ],
+    "page5": [
+        "Regala una visita",
+        "Regala una visida"
+    ]
+}
