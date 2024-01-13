@@ -9,7 +9,9 @@
   --ottanio: #028eb9;
   --giallino: #ffffba;
   --bianco: #ffffff;
-  --nero: #000000
+  --nero: #000000;
+  --fontGeneric: Doris;
+  --fontTitle: Lobster
 }
 
 /* 
@@ -23,11 +25,33 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
+.btn-custom {
+  font-family: var(--fontTitle);  
+  color: var(--bianco);
+  background-color: var(--ottanio);
+  border-color: var(--giallino);
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  color: var(--ottanio);
+  background-color: var(--giallino);
+  border-color: var(--ottanio);
+  transform: scale(1.5);
+  transition: all .2s linear;
+  /* text-shadow: none; /* Prevent inheritance from `body` */ */
+}
+
 .btn-transparent {
   background-color: transparent;
   border-color: transparent;
 }
 
+.imgTitle:hover,
+.imgTitle:focus {
+  transform: scale(1.25);
+  transition: all .4s linear;
+}
 /*
  * Base structure
  */
@@ -35,6 +59,7 @@
 body {
   color: var(--nero);
   background: var(--bianco);
+  font-family: var(--fontGeneric)
   
   /*
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
@@ -54,8 +79,9 @@ body {
  * Header
  */
 
-#homeTitle {
+.homeTitle {
   color: var(--ottanio);
+  font-family: var(--fontTitle)
 }
 
 .nav-masthead .nav-link {
