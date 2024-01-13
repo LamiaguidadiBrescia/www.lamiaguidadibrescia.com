@@ -1,2 +1,8 @@
 node_modules
 .env
+'per il sito, struttura.odt'
+'per il sito, struttura.txt'
+views/partials/body-div_opening.ejs.backup
+views/partials/body-div_closing.ejs.backup
+views/partials/header.ejs.backup
+
