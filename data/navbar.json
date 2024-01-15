@@ -1,29 +1,33 @@
 {
-    "homepage": [
+    "/": [
         "Home",
         "Home"
     ],
-    "page1": [
+    "/guidaperte": [
         "Una guida per te",
         "¡Una guía para usted!"
     ],
-    "page2": [
+    "/calendario": [
         "Il Calendario",
         "El calendario"
     ],
-    "page3": [
+    "/itinerari": [
         "Gli itinerari",
         "Los itinerarios"
     ],
-    "page4": [
+    "/evidenza": [
         "In evidenza",
         "A destacar"
     ],
-    "page5": [
+    "/regalavisita": [
         "Regala una visita",
         "Regale una visita"
     ],
-        "page6": [
+    "/contatti": [
+        "Contatti",
+        "Contactos"
+    ],
+    "/lingua": [
         "Lingua",
         "Idioma"
     ]

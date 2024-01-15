@@ -1,68 +1,69 @@
 <!-- views/partials/header.ejs -->
 
 
-
 <header>
-<div class="row">
 
+<!-- Logo row -->
+<div class="row">
   <div class="col-sm-1"></div>
-  <div class="col-sm-10">
-    <h1 class="homeTitle"><img src="images/logo.png" class="img w-25 p-5" alt="La mia guida di Brescia">La mia guida di Brescia</h1>
-  </div>
+  <div class="col-sm-10"><img src="images/logoSmallColored.png" class="img p-5" alt="La mia guida di Brescia"></div>
   <div class="col-sm-1"></div>
-  
 </div>
 
+<!-- Title row -->
 <div class="row">
-    <div class="col-sm">
-      <nav class="nav nav-masthead justify-content-center">
-      
-      <% if (navlink == "home") { %>
-          <a class="nav-link active" aria-current="page" href="/"><%= structure.navbar.homepage[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/"><%= structure.navbar.homepage[lang] %></a>
-      <% } %>
-      
-      <% if (navlink == "guidaperte") { %>
-          <a class="nav-link active" aria-current="page" href="/games"><%= structure.navbar.page1[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/guidaperte"><%= structure.navbar.page1[lang] %></a>
-      <% } %>
-      
-      <% if (navlink == "calendario") { %>
-          <a class="nav-link active" aria-current="page" href="/calendario"><%= structure.navbar.page2[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/calendario"><%= structure.navbar.page2[lang] %></a>
-      <% } %>
-      
-      <% if (navlink == "itinerari") { %>
-          <a class="nav-link active" aria-current="page" href="/itinerari"><%= structure.navbar.page3[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/itinerari"><%= structure.navbar.page3[lang] %></a>
-      <% } %>
-    
-      <% if (navlink == "evidenza") { %>
-          <a class="nav-link active" aria-current="page" href="/evidenza"><%= structure.navbar.page4[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/evidenza"><%= structure.navbar.page4[lang] %></a>
-      <% } %>
-      
-      <% if (navlink == "regalavisita") { %>
-          <a class="nav-link active" aria-current="page" href="/regalavisita"><%= structure.navbar.page5[lang] %></a>
-      <%} else { %>
-          <a class="nav-link" href="/regalavisita"><%= structure.navbar.page5[lang] %></a>
-      <% } %>
-      
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> <i class="fas fa-globe"></i> <%= structure.navbar.page6[lang] %></a>
-      <ul class="dropdown-menu btn-transparent">
-        <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('IT')">Italiano</button></li>
-        <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('ES')">Español</button></li>
-        <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('PT')">Português</button></li>
-      </ul>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10"><h1 class="homeTitle">La mia guida di Brescia</h1></div>
+  <div class="col-sm-1"></div>
+</div>
+
+
+<!-- Navbar row -->
+
+
+<div class="row">
+
+    <nav class="navbar navbar-collapse navbar-transparent bg-transparent"> 
+
+
+        <div class="col-1"></div>
+        <div class="col-6">
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav rounded-4">                  
+                  <% for (var page in structure.navbar) { %>
+                    <li class="nav-item">
+                      <% if (navlink == page) { %>
+                        <a class="nav-link customActive" aria-current="page" href=<%- page %>><%- structure.navbar[page][lang] %></a>
+                      <%} else { %>
+                        <a class="nav-link" aria-current="page" href=<%- page %>><%- structure.navbar[page][lang] %></a>
+                      <% } %>
+                    </li>
+                  <% } %>
+                </ul>
+              </div>
+        </div>
+
         
-      </nav>
-    </div> <!-- /column -->
-</div> <!-- /row -->
+    <div class="col-1">
+        <a class="navbar-brand float-end" href="#"></a>
+        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon float-end"></span>
+        </button>
+    </div>
+
+        
+
+    </nav>
+
+
+</div>
+
+
+
+
+
+
+
 </header>
 
 <script>

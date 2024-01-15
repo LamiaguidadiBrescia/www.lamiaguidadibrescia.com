@@ -18,7 +18,7 @@ router.get('/', function(req, res) {
   }
   
   res.render('home', {
-    navlink : 'home',
+    navlink : '/',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -40,7 +40,7 @@ router.get('/guidaperte', function(req, res) {
   }
   
   res.render('guidaperte', {
-    navlink : 'guidaperte',
+    navlink : '/guidaperte',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -62,7 +62,7 @@ router.get('/calendario', function(req, res) {
   }
   
   res.render('calendario', {
-    navlink : 'calendario',
+    navlink : '/calendario',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -84,7 +84,7 @@ router.get('/itinerari', function(req, res) {
   }
   
   res.render('itinerari', {
-    navlink : 'itinerari',
+    navlink : '/itinerari',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -106,7 +106,7 @@ router.get('/evidenza', function(req, res) {
   }
   
   res.render('evidenza', {
-    navlink : 'evidenza',
+    navlink : '/evidenza',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -128,7 +128,7 @@ router.get('/regalavisita', function(req, res) {
   }
   
   res.render('regalavisita', {
-    navlink : 'regalavisita',
+    navlink : '/regalavisita',
     structure : req.app.locals.structure,
     lang : lang
   });
@@ -150,7 +150,7 @@ router.get('/contatti', function(req, res) {
   }
   
   res.render('contatti', {
-    navlink : 'contatti',
+    navlink : '/contatti',
     structure : req.app.locals.structure,
     lang : lang
   });

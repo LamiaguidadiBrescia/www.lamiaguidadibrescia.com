@@ -34,6 +34,7 @@ let structure = {
         }
 };
 
+
 /* a bit of logs for debugging ;-)
 console.log('navbar : '+JSON.stringify(navbar, null, 2));
 console.log('pageTitles : '+JSON.stringify(pageTitles, null, 2));
