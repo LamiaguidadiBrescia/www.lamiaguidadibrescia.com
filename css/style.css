@@ -14,16 +14,23 @@
   --fontTitle: Lobster
 }
 
+
+
+/*
+ * Base structure
+ */
+
+body {
+  color: var(--nero);
+  background: var(--bianco);
+  font-family: var(--fontGeneric)
+  
+}
+
+
 /* 
  * Custom default button 
  */
- 
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
 
 .btn-custom {
   font-family: var(--fontTitle);  
@@ -42,18 +49,11 @@
   /* text-shadow: none; /* Prevent inheritance from `body` */ */
 }
 
-.btn-transparent {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.imgTitle:hover,
-.imgTitle:focus {
-  transform: scale(1.25);
-  transition: all .4s linear;
-}
 
 
+/* 
+ * Custom navbar 
+ */
 .navbar-nav {
   background-color: var(--ottanio);
 }
@@ -75,30 +75,32 @@
 }
 
 
-/*
- * Base structure
- */
 
+
+
+
+
+/* 
+ * effects on home images 
+ */
+ 
+.imgTitle:hover,
+.imgTitle:focus {
+  transform: scale(1.25);
+  transition: all .4s linear;
+}
+
+/* 
+ * small fonts for text 
+ */
+ 
 .smallFont {
    font-size: 0.8rem;
 }
 
-body {
-  color: var(--nero);
-  background: var(--bianco);
-  font-family: var(--fontGeneric)
-  
-}
-
-.cover-container {
-  max-width: 100%;
-}
-
-
-/*
- * Header
+/* 
+ * colours for home titles 
  */
-
 .homeTitle {
   color: var(--ottanio);
   font-family: var(--fontTitle)
@@ -123,7 +125,7 @@ body {
 */
 
 /* Carousel
--------------------------------------------------- */
+
 .carousel-caption {
     position: relative;
     left: 0;
@@ -135,3 +137,4 @@ body {
     left: 0;
     top: -1vh;
 }
+-------------------------------------------------- */

@@ -46,7 +46,6 @@ console.log(structure.content.title1[1]);
 
 // require and instantiate express
 const express = require('express');
-
 // do we need cookieparser, bodyparser and crypto?
 const cookieParser = require('cookie-parser');
 //const bodyParser = require('body-parser');

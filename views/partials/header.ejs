@@ -19,54 +19,49 @@
 
 
 <!-- Navbar row -->
+<div class="row justify-content-center">
+  <nav class="navbar navbar-collapse"> 
+    <div class="col-1"></div>
+    <!-- 6 columns for centered navbar -->
+    <div class="col-6">
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav rounded-4">                  
+          <% var structureNoLang = structure.navbar; %>
+          <% delete structureNoLang["/lingua"]; %>
+          <% for (var page in structureNoLang) { %>
+          <li class="nav-item">
+            <% if (navlink == page) { %>
+            <a class="nav-link customActive" aria-current="page" href=<%- page %>><%- structureNoLang[page][lang] %></a>
+            <%} else { %>
+            <a class="nav-link" aria-current="page" href=<%- page %>><%- structureNoLang[page][lang] %></a>
+            <% } %>
+          </li>
+          <% } %>
+          <!-- language chooser dropdown -->
+          <li class="nav-item">
+            <div class="dropdown-center">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/lingua" role="button" aria-expanded="false"><i class="fas fa-globe"></i></a>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button" onclick="setLanguage('IT')">Italiano</button></li>
+                <li><button class="dropdown-item" type="button" onclick="setLanguage('ES')">Español</button></li>
+                <li><button class="dropdown-item" type="button" onclick="setLanguage('PT')">Português</button></li>
+              </ul>
+            </div>
+          </li>
 
+        </ul>
+      </div>
+    </div>
 
-<div class="row">
-
-    <nav class="navbar navbar-collapse navbar-transparent bg-transparent"> 
-
-
-        <div class="col-1"></div>
-        <div class="col-6">
-              <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav rounded-4">                  
-                  <% var structureNoLang = structure.navbar; %>
-                  <% delete structureNoLang["/lingua"]; %>
-                  <% for (var page in structureNoLang) { %>
-                    <li class="nav-item">
-                      <% if (navlink == page) { %>
-                        <a class="nav-link customActive" aria-current="page" href=<%- page %>><%- structureNoLang[page][lang] %></a>
-                      <%} else { %>
-                        <a class="nav-link" aria-current="page" href=<%- page %>><%- structureNoLang[page][lang] %></a>
-                      <% } %>
-                    </li>
-                  <% } %>
-                
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/lingua" role="button" aria-expanded="false"> <i class="fas fa-globe"></i></a>
-                    <ul class="dropdown-menu btn-transparent">
-                      <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('IT')">Italiano</button></li>
-                      <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('ES')">Español</button></li>
-                      <li><button class="btn btn-sm btn-secondary fw-bold border-white bg-white my-1" type="button" onclick="setLanguage('PT')">Português</button></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-        </div>
-
-        
+    
     <div class="col-1">
         <a class="navbar-brand float-end" href="#"></a>
         <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon float-end"></span>
         </button>
     </div>
-
-        
-
-    </nav>
-
-
+      
+  </nav>
 </div>
 
 
@@ -80,8 +75,9 @@
 <script>
 function setLanguage(lang) {
   let myCookie = "language="+lang;
-  console.log(myCookie);
+  // console.log(myCookie);
   document.cookie = myCookie;
+  //location.assign("/");
   location.reload();
   return false;
 }

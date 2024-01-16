@@ -1,5 +1,8 @@
 /* IT route */
+// require and instantiate express
 const express = require("express");
+
+// and express-router
 const router = express.Router();
 
 // home page
