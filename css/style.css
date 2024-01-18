@@ -6,7 +6,8 @@
  * let's define our css variables
  */ 
 :root {
-  --ottanio: #028eb9;
+  /*--ottanio: #028eb9;*/
+  --ottanio: #008099;
   --giallino: #ffffba;
   --bianco: #ffffff;
   --nero: #000000;
