@@ -23,6 +23,7 @@ router.get('/', function(req, res) {
   res.render('home', {
     navlink : '/',
     structure : req.app.locals.structure,
+    structure2 : req.app.locals.structure2,
     lang : lang
   });
 });
@@ -72,7 +73,7 @@ router.get('/calendario', function(req, res) {
 });
 
 // gli itinerari
-router.get('/itinerari', function(req, res) {
+router.get('/itinerariclassici', function(req, res) {
 
   // switch between different languages
   switch(req.cookies.language) {
@@ -86,8 +87,48 @@ router.get('/itinerari', function(req, res) {
     lang = 0;
   }
   
-  res.render('itinerari', {
-    navlink : '/itinerari',
+  res.render('itinerariclassici', {
+    navlink : '/itinerariclassici',
+    structure : req.app.locals.structure,
+    lang : lang
+  });
+});
+router.get('/itinerarilaghi', function(req, res) {
+
+  // switch between different languages
+  switch(req.cookies.language) {
+  case "IT":
+    lang = 0;
+    break;
+  case "ES":
+    lang = 1;
+    break;
+  default:
+    lang = 0;
+  }
+  
+  res.render('itinerarilaghi', {
+    navlink : '/itinerarilaghi',
+    structure : req.app.locals.structure,
+    lang : lang
+  });
+});
+router.get('/itineraritema', function(req, res) {
+
+  // switch between different languages
+  switch(req.cookies.language) {
+  case "IT":
+    lang = 0;
+    break;
+  case "ES":
+    lang = 1;
+    break;
+  default:
+    lang = 0;
+  }
+  
+  res.render('itineraritema', {
+    navlink : '/itineraritema',
     structure : req.app.locals.structure,
     lang : lang
   });

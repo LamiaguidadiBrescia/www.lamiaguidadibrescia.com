@@ -24,19 +24,22 @@ let content3ES = fs.readFileSync('./data/ES/content3.txt');
 
 
 let structure = {
-    'navbar': navbar, 
-    'pageNames': pageNames,
-    'content': {
-        'title1': [[titleContent1IT], [titleContent1ES]],
-        'page1': [ [content1IT, content2IT], [content1ES, content2ES]],
-        'title2': [[titleContent2IT], [titleContent2ES]],
-        'page2': [ [content3IT], [content3ES] ]
+    "navbar": navbar, 
+    "pageNames": pageNames,
+    "content": {
+        "title1": [[titleContent1IT], [titleContent1ES]],
+        "page1": [ [content1IT, content2IT], [content1ES, content2ES]],
+        "title2": [[titleContent2IT], [titleContent2ES]],
+        "page2": [ [content3IT], [content3ES] ]
         }
 };
 
 
+
 /* a bit of logs for debugging ;-)
 console.log('navbar : '+JSON.stringify(navbar, null, 2));
+console.log('navbar / : '+JSON.stringify(navbar["/"]["menu"][1], null, 2));
+
 console.log('pageTitles : '+JSON.stringify(pageTitles, null, 2));
 console.log('content1IT : '+content1IT);
 console.log('content1ES : '+content1ES);
