@@ -6,7 +6,7 @@
  * let's define our css variables
  */ 
 :root {
-  /*--ottanio: #028eb9;*/
+  /* old --ottanio: #028eb9;*/
   --ottanio: #008099;
   --giallino: #ffffba;
   --bianco: #ffffff;
@@ -16,41 +16,56 @@
 }
 
 
-
 /*
  * Base structure
  */
-
 body {
   color: var(--nero);
   background: var(--bianco);
-  font-family: var(--fontGeneric)
-  
+  font-family: var(--fontGeneric);
+  font-size: 1.1rem
 }
 
 
 /* 
- * Custom default button 
+ * Custom button 
  */
-
 .btn-custom {
   font-family: var(--fontTitle);  
   color: var(--bianco);
   background-color: var(--ottanio);
   border-color: var(--giallino);
+  border-radius: 1.75rem;
+  border-width: 0.5rem
 }
-
 .btn-custom:hover,
 .btn-custom:focus {
   color: var(--ottanio);
   background-color: var(--giallino);
   border-color: var(--ottanio);
   transform: scale(1.5);
-  transition: all .2s linear;
-  /* text-shadow: none; /* Prevent inheritance from `body` */ */
+  transition: all .2s linear
 }
 
+/* 
+ * Custom card 
+ */
+.card-custom {
+  font-family: var(--fontTitle);  
+  color: var(--bianco);
+  background-color: var(--ottanio);
+  border-color: var(--giallino);
+  border-radius: 1.75rem;
+  border-width: 0.5rem
+}
 
+/* 
+ * Custom footer 
+ */
+.footer-custom {
+  font-style: italic;
+  font-size: 0.75rem
+}
 
 /* 
  * Custom navbar 
@@ -70,34 +85,28 @@ body {
 .nav-link:focus {
   color: var(--bianco);
 }
-
 .nav-link.customActive {
   color: var(--giallino);
 }
 
 
-
-
-
-
-
 /* 
  * effects on home images 
  */
- 
 .imgTitle:hover,
 .imgTitle:focus {
-  transform: scale(1.25);
+  transform: scale(1.2);
   transition: all .4s linear;
 }
 
 /* 
  * small fonts for text 
- */
- 
+ */ 
+/*
 .smallFont {
-   font-size: 0.8rem;
+   font-size: 1.1rem;
 }
+*/
 
 /* 
  * colours for home titles 
@@ -106,7 +115,6 @@ body {
   color: var(--ottanio);
   font-family: var(--fontTitle)
 }
-
 
 
 /* Sticky footer styles
