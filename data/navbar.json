@@ -29,6 +29,11 @@
         "title":    ["La mia guida di Brescia - Gli itinerari tematici", "La mia guida di Brescia - Los itinerarios tematicos"],
         "icon":     "bullseye"
     },
+    "/itinerarididattici": {
+        "menu":     ["Gli itinerari didattici", "Los itinerarios didatticos"],
+        "title":    ["La mia guida di Brescia - Gli itinerari didattici", "La mia guida di Brescia - Los itinerarios didatticso"],
+        "icon":     "graduation-cap"
+    },
     "/evidenza": {
         "menu":     ["In evidenza","A destacar"],
         "title":    ["La mia guida di Brescia - In evidenza", "La mia guida di Brescia - A destacar"],

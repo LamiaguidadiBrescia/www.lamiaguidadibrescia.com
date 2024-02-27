@@ -72,7 +72,7 @@ router.get('/calendario', function(req, res) {
   });
 });
 
-// gli itinerari
+// gli itinerari classici
 router.get('/itinerariclassici', function(req, res) {
 
   // switch between different languages
@@ -93,6 +93,8 @@ router.get('/itinerariclassici', function(req, res) {
     lang : lang
   });
 });
+
+// gli itinerari dei laghi
 router.get('/itinerarilaghi', function(req, res) {
 
   // switch between different languages
@@ -113,6 +115,8 @@ router.get('/itinerarilaghi', function(req, res) {
     lang : lang
   });
 });
+
+// gli itinerari a tema
 router.get('/itineraritema', function(req, res) {
 
   // switch between different languages
@@ -129,6 +133,28 @@ router.get('/itineraritema', function(req, res) {
   
   res.render('itineraritema', {
     navlink : '/itineraritema',
+    structure : req.app.locals.structure,
+    lang : lang
+  });
+});
+
+// gli itinerari didattici
+router.get('/itinerarididattici', function(req, res) {
+
+  // switch between different languages
+  switch(req.cookies.language) {
+  case "IT":
+    lang = 0;
+    break;
+  case "ES":
+    lang = 1;
+    break;
+  default:
+    lang = 0;
+  }
+  
+  res.render('itinerarididattici', {
+    navlink : '/itinerarididattici',
     structure : req.app.locals.structure,
     lang : lang
   });
