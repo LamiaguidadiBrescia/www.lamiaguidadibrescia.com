@@ -41,17 +41,34 @@ body {
  */
 .btn-custom {
   font-family: var(--fontTitle);  
-  color: var(--colPrincipaleContrasto);
+  color: var(--bianco);
   background-color: var(--colPrincipale);
   border-color: var(--colPrincipaleContrasto);
-  border-radius: 1.75rem;
+  border-radius: 1.25rem;
   border-width: 0.3rem
 }
 .btn-custom:hover,
 .btn-custom:focus {
-  color: var(--colSecondarioContrasto);
+  color: var(--bianco);
   background-color: var(--colSecondario);
   border-color: var(--colSecondarioContrasto);
+  transform: scale(1.5);
+  transition: all .2s linear
+}
+
+.btn-custom2 {
+  font-family: var(--fontTitle);  
+  color: var(--bianco);
+  background-color: var(--colSecondario);
+  border-color: var(--colSecondarioContrasto);
+  border-radius: 1.25rem;
+  border-width: 0.3rem
+}
+.btn-custom2:hover,
+.btn-custom2:focus {
+  color: var(--bianco);
+  background-color: var(--colPrincipale);
+  border-color: var(--colPrincipaleContrasto);
   transform: scale(1.5);
   transition: all .2s linear
 }
