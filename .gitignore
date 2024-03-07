@@ -3,6 +3,7 @@ node_modules
 'per il sito, struttura.odt'
 'per il sito, struttura2.odt'
 'per il sito, struttura.txt'
+'modifiche alla home.odt'
 views/partials/body-div_opening.ejs.backup
 views/partials/body-div_closing.ejs.backup
 views/partials/header.ejs.backup

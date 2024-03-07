@@ -116,7 +116,15 @@ body {
   font-weight: bolder;
 }
 
-
+/* 
+ * home images 
+ */
+.img-custom {
+  border-color: var(--colPrincipaleContrasto);
+  border-radius: 1.25rem;
+  border-width: 1rem;
+  border-style: solid;
+}
 /* 
  * effects on home images 
  */
