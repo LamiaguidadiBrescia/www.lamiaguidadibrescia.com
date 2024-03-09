@@ -17,22 +17,27 @@
     "/itinerariclassici": {
         "menu":     ["Gli itinerari Classici", "Los itinerarios classicos"],
         "title":    ["La mia guida di Brescia - Gli itinerari Classici", "La mia guida di Brescia - Los itinerarios Classicos"],
-        "icon":     "landmark"
+        "icon":     "landmark-dome"
     },
-    "/itinerarilaghi": {
-        "menu":     ["Gli itinerari dei laghi", "Los itinerarios des lagos"],
-        "title":    ["La mia guida di Brescia - Gli itinerari dei laghi", "La mia guida di Brescia - Los itinerarios des lagos"],
-        "icon":     "water"
+    "/itinerarididattici": {
+        "menu":     ["Gli itinerari didattici", "Los itinerarios didatticos"],
+        "title":    ["La mia guida di Brescia - Gli itinerari didattici", "La mia guida di Brescia - Los itinerarios didatticso"],
+        "icon":     "graduation-cap"
     },
     "/itineraritema": {
         "menu":     ["Gli itinerari tematici", "Los itinerarios tematicos"],
         "title":    ["La mia guida di Brescia - Gli itinerari tematici", "La mia guida di Brescia - Los itinerarios tematicos"],
         "icon":     "bullseye"
     },
-    "/itinerarididattici": {
-        "menu":     ["Gli itinerari didattici", "Los itinerarios didatticos"],
-        "title":    ["La mia guida di Brescia - Gli itinerari didattici", "La mia guida di Brescia - Los itinerarios didatticso"],
-        "icon":     "graduation-cap"
+    "/itineraristorici": {
+        "menu":     ["Gli itinerari storici", "Los itinerarios historicos"],
+        "title":    ["La mia guida di Brescia - Gli itinerari storici", "La mia guida di Brescia - Los itinerarios historicos"],
+        "icon":     "building-columns"
+    },
+    "/itinerarilaghi": {
+        "menu":     ["Gli itinerari dei laghi", "Los itinerarios des lagos"],
+        "title":    ["La mia guida di Brescia - Gli itinerari dei laghi", "La mia guida di Brescia - Los itinerarios des lagos"],
+        "icon":     "water"
     },
     "/evidenza": {
         "menu":     ["In evidenza","A destacar"],
