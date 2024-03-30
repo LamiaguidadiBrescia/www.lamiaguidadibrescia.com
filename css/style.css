@@ -76,11 +76,19 @@ body {
 /* 
  * Custom card 
  */
-.card-custom {
+.card-custom1 {
   font-family: var(--fontTitle);  
   color: var(--bianco);
   background-color: var(--colPrincipale);
   border-color: var(--colPrincipaleContrasto);
+  border-radius: 1.75rem;
+  border-width: 0.3rem
+}
+.card-custom2 {
+  font-family: var(--fontTitle);  
+  color: var(--bianco);
+  background-color: var(--colPrincipaleContrasto);
+  border-color: var(--colPrincipale);
   border-radius: 1.75rem;
   border-width: 0.3rem
 }
