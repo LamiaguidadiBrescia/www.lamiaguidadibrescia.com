@@ -29,14 +29,14 @@
     <h6><em>Adatto per:</em> tutti e ancor di più per gli appassionati di pittura.</h6>
     <h6><em>Cosa si visita:</em> Le opere più significative della Pinacoteca Tosio-Martinengo.</h6>
     
-    <div class="accordion mb-3" id="description4a">
+    <div class="accordion mb-3" id="description2c">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4a">
-          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4a" aria-expanded="true" aria-controls="collapse4a">
+        <h2 class="accordion-header" id="heading2c">
+          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="true" aria-controls="collapse2c">
             <em>Scopri di più:</em> 
           </button>
         </h2>
-        <div id="collapse4a" class="accordion-collapse collapse" aria-labelledby="heading4a" data-bs-parent="#description4a">
+        <div id="collapse2c" class="accordion-collapse collapse" aria-labelledby="heading2c" data-bs-parent="#description2c">
           <div class="accordion-body">
             <h6><em>Descrizione:</em> alla National Gallery di Londra si ammirano opere dei nostri maestri bresciani del ‘500..mentre noi li abbiamo in uno spazio superlativo che forse non è abbastanza conosciuto. Il nuovo restauro e allestimento, avvenuto nel 2018, ha restituito l’aspetto della dimora signorile, sia per il percorso circolare, sia per l’illuminazione, la scansione degli spazi e le controsoffittature. In questo contesto nobile ed elegante, le cui pareti vellutate offrono colori in dialogo coi colori contenuti nei quadri, si presenta una collezione di eccezionale valore. Si parte dal maestro della pittura bresciana, Vincenzo Foppa, si passa alla visione di due piccole e delicatissime opere di Raffaello giovane, si attraversa la grande pittura lombarda del ‘500 coi capolavori di Romanino, Moretto, Lotto e Savoldo, si giunge davanti al complesso ciclo di Padernello del Pitocchetto e si prosegue in un susseguirsi di meraviglia fino a chiudere il percorso con capolavori di Hayez e Canova.</h6>
             <h6><em><strong>Attenzione</strong></em> è consigliata la prenotazione per il Museo ed è necessaria se si è in gruppo al seguente link: <a class="link-opacity-100" href="https://www.ticketlandia.com/m/fondazione-brescia-musei">Ticket Fondazione Brescia Musei</a></h6>
@@ -51,7 +51,7 @@
 </div> <!-- /row -->
 
 <!-- Main row -->
-<div class="row my-5 justify-content-center" id="castello">
+<div class="row my-5 justify-content-center" id="pinacoteca">
   <div class="col"><!-- content col -->
             
     <h3 class="homeTitle">Brescia</h3>
@@ -63,14 +63,14 @@
     <h6><em>Adatto per:</em> tutti coloro che hanno voglia di capire com’è cambiata la difesa di un baluardo militare nei secoli e la storia della nostra città. Si camminerà un po’!</h6>
     <h6><em>Cosa si visita:</em> il castello in lungo e in largo passando dai ponti levatoi, il mastio, le cannoniere e le torri. Solo visite in esterno, non sono previsti i musei.</h6>
     
-    <div class="accordion mb-3" id="description4b">
+    <div class="accordion mb-3" id="description2c">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4b">
-          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4b" aria-expanded="true" aria-controls="collapse4b">
+        <h2 class="accordion-header" id="heading2c">
+          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="true" aria-controls="collapse2c">
             <em>Scopri di più:</em> 
           </button>
         </h2>
-        <div id="collapse4b" class="accordion-collapse collapse" aria-labelledby="heading4b" data-bs-parent="#description4b">
+        <div id="collapse2c" class="accordion-collapse collapse" aria-labelledby="heading2c" data-bs-parent="#description2c">
           <div class="accordion-body">
             <h6><em>Descrizione:</em> quante cose si possono scoprire della difesa militare divertendosi! Esplorando dalla porta principale di entrata al castello, sino alla discesa per la Porta del Soccorso, si può comprendere la funzione di ogni particolare e com’è cambiata la difesa a seguito dell’arrivo della polvere da sparo. Culmine dell’esperienza sarà la conoscenza della parte più antica: il Mastio visconteo che nasconde un cuore romano ancora più arcaico. Il viaggio nel tempo prosegue percorrendo le mura che permettono di rivivere i momenti più importanti in cui la città è stata conquistata dai francesi  imperiali nel 1512 e dagli austriaci durante le X giornate del 1849 (proprio perché gli invasori dominavano il castello!).</h6>
           </div>
@@ -119,14 +119,14 @@
     <h6><em>Adatto per:</em> tutti coloro che hanno voglia di scoprire il lato umano di alcuni personaggi che hanno contribuito alla storia della nostra città e alcune storie d’amore che hanno avuto Brescia come scenario.</h6>
     <h6><em>Cosa si visita:</em>  luoghi che sono stati scenario degli amori, spesso contrastati, tra alcuni dei protagonisti della storia della città. Dall’alto medioevo, passando per il periodo delle signorie, amori in convento sul finir del Seicento, la grande stagione dei salotti del Settecento, per proseguire con l’eroe delle X Giornate e due protagonisti del Novecento bresciano. </h6>
     
-    <div class="accordion mb-3" id="description4d">
+    <div class="accordion mb-3" id="description2c">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4d">
-          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4d" aria-expanded="true" aria-controls="collapse4d">
+        <h2 class="accordion-header" id="heading2c">
+          <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="true" aria-controls="collapse2c">
             <em>Scopri di più:</em> 
           </button>
         </h2>
-        <div id="collapse4d" class="accordion-collapse collapse" aria-labelledby="heading4dc" data-bs-parent="#description4d">
+        <div id="collapse2c" class="accordion-collapse collapse" aria-labelledby="heading2c" data-bs-parent="#description2c">
           <div class="accordion-body">
             <h6><em>Descrizione:</em> a città dell’amore è la vicina Verona...ma è felice e a lieto fine la storia famosa che la città veneta custodisce? Se romantica è Verona, lo stesso può esserlo la nostra Brescia! Storie struggenti, non sempre dal finale felice (anzi!) ma con notevoli colpi di scena che ci permetteranno, anche se con leggerezza, di ripercorrere alcuni momenti salienti della storia cittadina e di conoscere più da vicino alcuni dei suoi protagonisti.</h6>
           </div>
