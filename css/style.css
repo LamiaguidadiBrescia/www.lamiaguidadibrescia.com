@@ -126,6 +126,15 @@ body {
 }
 
 /* 
+ * logo
+ */
+.img-rounde {
+  border-color: var(--colPrincipaleContrasto);
+  border-radius:50% !important; 
+  border-width: 0.75rem;
+  border-style: solid;
+}
+/* 
  * home images 
  */
 .img-custom {
