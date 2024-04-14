@@ -128,7 +128,7 @@ body {
 /* 
  * logo
  */
-.img-rounde {
+.img-rounded {
   border-color: var(--colPrincipaleContrasto);
   border-radius:50% !important; 
   border-width: 0.75rem;
