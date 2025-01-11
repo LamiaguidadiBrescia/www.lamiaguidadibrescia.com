@@ -107,6 +107,7 @@ body {
  */
 .navbar-nav {
   background-color: var(--colPrincipaleContrasto);
+  text-align: left !important;
 }
 .nav-link {
   padding: .25rem 0;
@@ -123,6 +124,29 @@ body {
 .nav-link.customActive {
   text-decoration: underline;
   font-weight: bolder;
+}
+.navbar-nav {
+  background-color: var(--colPrincipaleContrasto);
+} 
+.dropdown-menu {
+  padding: .25rem 0;
+  /* font-size: 1.0rem; */
+  font-weight: 700;
+  color: var(--bianco);
+  background-color: transparent;
+  border: 0 solid transparent; 
+}
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+  color: var(--colPrincipale);
+}
+.nav-link.customActive {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.flag {
+  width: 2.5rem;
 }
 
 /* 

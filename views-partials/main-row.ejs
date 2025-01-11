@@ -1,0 +1,169 @@
+<!-- views-partials/main-row.ejs -->
+   
+   
+    
+<!-- // remember body  has been opened-->
+  <!-- // remember main div container has been opened-->  
+    <!-- Main row -->
+    
+    <!-- Ugly hack to add collapse as a class when needed -->
+    <% if (row["collapse"] === "collapse" ) { %> 
+      <div class= "<%- row["collapse-class"] %>"  id= <%- row["id"] %>  >
+    <% } else { %>
+      <div class="row my-5 justify-content-center" id= <%- row["id"] %>  >
+    <% } %>
+    
+    
+      <div class="col">
+        
+        <!-- check if title exists and set if it does -->
+        <% if (row["title"] != null ) { %>
+          <h2 class="homeTitle"><%= row["title"] %></h2>
+        <% } %>
+
+        <!-- check if title2 exists and set if it does -->
+        <% if (row["title2"] != null ) { %>
+          <h3 class="homeTitle"><%- row["title2"] %></h3>
+        <% } %>
+        
+        <!-- check if subtitle exists and set if it does -->
+        <% if (row["subtitle"] != null ) { %>
+          <h4 class="homeSubTitle"> <%- row["subtitle"] %> </h4>
+        <% } %>
+
+        <!-- check if collaboration exists and set if it does -->
+        <% if (row["collaboration"] != null ) { %>
+          <h4 class="homeSubTitle"> <a class="text-reset text-decoration-none" href= <%- row["collaboration-link"] %>  target="_blank" rel="noopener noreferrer"> In collaborazione con <%= row["collaboration"] %>  <img src= <%- "/images/" + row["collaboration-img"] %> alt= <%- row["collaboration-img-alt"] %> ></a></h4>
+        <% } %>
+        
+        <!-- check if description exists and set if it does -->
+        <% if (row["description"] != null ) { %>
+          <h3 class="smallFont"><%= row["description"] %></h3>
+        <% } %>
+        
+        <!-- check if img exists and set if it does -->
+        <% if (row["img-src"] != null && row["img-alt"] && row["img-title"] ) { %>
+          <img src=<%- "/images/" + row["img-src"] %> alt=<%- "\"" + row["img-alt"] + "\"" %> title=<%- "\"" + row["img-title"] + "\"" %> class="img-fluid img-custom">
+          <br><br>
+        <% } %>
+        
+
+        <!-- check if subtitles exist and iterate through all subtitles -->
+        <% if (row["subtitles"] != null ) { %>
+          <% row["subtitles"].forEach((key,index) => { %>
+            
+            <h3 class="homeSubTitle"><%= key["subtitle-title"] %></h3>
+            <h3 class="smallFont azzurrino"><%- key["subtitle-smallfont-azzurrino"] %></h3>
+            <h3 class="smallFont"><%- key["subtitle-smallfont1"] %></h3>
+            <h3 class="smallFont"><%- key["subtitle-smallfont2"] %></h3>
+            <h3 class="smallFont"><%- key["subtitle-smallfont3"] %></h3>
+            <h3 class="smallFont"><%- key["subtitle-smallfont4"] %></h3>
+            <h3 class="smallFont"><%- key["subtitle-smallfont5"] %></h3>
+            
+            <% if (key["subtitle-when"] != null ) { %>
+              <h6><em>Quando:</em><%- key["subtitle-when"] %></h6>
+            <% } %>
+            <% if (key["subtitle-description"] != null ) { %>
+              <h6><%- key["subtitle-description"] %></h6>
+            <% } %>
+            
+            <% if ( key["subtitle-link"] != null && key["subtitle-link-text"] != null ) { %>
+              <p>
+                <a href=<%- process.env.ROOTWEBPAGE + "/" + pageLanguage + "/" + key["subtitle-link"] %> class="btn btn-lg btn-custom" role="button"><%= key["subtitle-link-text"] %></a>
+                <br>
+              </p>
+            <% } %>
+
+            <% if ( key["subtitle-mail-link"] != null && key["subtitle-mail-link-text"] != null ) { %>
+              <p>
+                <a href=<%- key["subtitle-mail-link"] %> class="btn btn-lg btn-custom2" role="button"><%= key["subtitle-mail-link-text"] %></a>
+                <br>
+              </p>
+            <% } %>
+
+          <% }) %>
+        <% } %>
+
+        <!-- check if buttons exist and exist and iterate through them if needed -->
+        <% if (row["buttons"] != null ) { %>
+          <% row["buttons"].forEach((key,index) => { %>
+            <h3 class="smallFont"><%- key["button-smallfont"] %></h3>
+            <br>
+
+            <p>
+              <button type="button" class="btn btn-lg btn-custom test" data-bs-toggle="collapse" data-bs-target=<%- "." + key["button-target"] %> aria-expanded="false" aria-controls="collapse"><%= key["button-text"] %></button>
+            </p>
+          <% }) %>
+        
+        <% } %>  
+
+
+        <!-- check if vertical links exist and iterate through them if needed -->
+        <% if (row["vlinks"] != null ) { %>
+          <p class="btn-group-vertical">
+            <% row["vlinks"].forEach((key,index) => { %>
+              <a href=<%- process.env.ROOTWEBPAGE + "/" + pageLanguage + "/" + key["vlink-link"] %> class="btn btn-lg btn-custom" role="button"><%- key["vlink-text"] %></a>
+            <% }) %>
+          </p>
+        <% } %>          
+
+        <!-- check if itinerary fields exis and set them -->
+        <% if (row["itinerary-duration"] != null ) { %>
+          <h6><em>Durata:</em> <%- row["itinerary-duration"] %> </h6>
+        <% } %>
+        <% if (row["itinerary-type"] != null ) { %>
+          <h6><em>Adatto per:</em> <%- row["itinerary-type"] %> </h6>
+        <% } %>
+        <% if (row["itinerary-content"] != null ) { %>
+          <h6><em>Cosa si visita:</em> <%- row["itinerary-content"] %> </h6>
+        <% } %>
+        <% if (row["itinerary-content-opt1"] != null ) { %>
+          <h6><em>Cosa si visita:</em></h6>
+          <h6> Opzione 1 - <%- row["itinerary-content-opt1"] %></h6>
+          <% if (row["itinerary-content-opt2"] != null ) { %>
+            <h6> Opzione 2 - <%- row["itinerary-content-opt2"] %></h6>
+          <% } %>
+          <% if (row["itinerary-content-opt3"] != null ) { %>
+            <h6> Opzione 3 - <%- row["itinerary-content-opt3"] %></h6>
+          <% } %>
+          <% if (row["itinerary-content-opt4"] != null ) { %>
+            <h6> Opzione 4 - <%- row["itinerary-content-opt4"] %></h6>
+          <% } %>
+          <% if (row["itinerary-content-opt5"] != null ) { %>
+            <h6> Opzione 5 - <%- row["itinerary-content-opt5"] %></h6>
+          <% } %>
+          <% if (row["itinerary-content-opt6"] != null ) { %>
+            <h6> Opzione 6 - <%- row["itinerary-content-opt6"] %></h6>
+          <% } %>
+        <% } %>
+        <% if ( row["itinerary-description"] != null  ) { %>
+          <div class="accordion mb-3" id= <%- row["id"] + "-description" %> >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id= <%- row["id"] + "-heading" %>  >
+                <button class="accordion-button collapsed homeTitle" type="button" data-bs-toggle="collapse" data-bs-target= <%- "#" + row["id"] + "-collapse" %> aria-expanded="true" aria-controls= <%- row["id"] + "-description" %> ><em>Scopri di più:</em></button>
+              </h2>
+              <div id= <%- row["id"] + "-collapse" %> class="accordion-collapse collapse" aria-labelledby= <%- row["id"] + "-heading" %> data-bs-parent= <%- "#" + row["id"] + "-description" %> >
+                <div class="accordion-body">
+                  <% if ( row["itinerary-monument"] != null) { %>
+                    <h6><em>Monumenti in esterno:</em> <%- row["itinerary-monument"] %> </h6>
+                  <% } %>
+                  <h6><em>Descrizione:</em> <%- row["itinerary-description"] %> </h6>
+                    <% if ( row["itinerary-warning"] != null && row["itinerary-link"] != null && row["itinerary-link-text"] != null ) { %>
+                      <h6><em><strong>Attenzione</strong></em> <%- row["itinerary-warning"] %> <a class="link-opacity-100" href= "<%- row["itinerary-warning-link"] %> "> <%= row["itinerary-warning-link-text"] %> </a></h6>
+                    <% } %>
+                </div>
+              </div>
+            </div>  
+          </div>
+        <% } %>
+        <% if ( row["itinerary-warning"] != null &&  row["itinerary-description"] == null ) { %>
+          <h6><em><strong>Attenzione</strong></em> <%- row["itinerary-warning"] %></h6>
+        <% } %>
+        <% if (row["itinerary-link"] != null ) { %>
+          <a href= <%- row["itinerary-link"] %>  class="btn btn-custom2"><%- row["itinerary-link-text"] %> </a>
+        <% } %>
+        
+        
+
+      </div>
+    </div> <!-- /row -->        
