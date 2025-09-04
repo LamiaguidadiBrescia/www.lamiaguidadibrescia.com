@@ -891,6 +891,8 @@
             }
           ]
         },
+        "guidaESdfdkfkafsdfds.txt": "fsdlkfjasdlkfjsldfjslk fpsdifosdfo prutipurt",
+        "guidaESfdsiddddddeellle.txt": "fsdhlfshdlfsdjfkjsdlk",
         "guidaperte.yaml": {
           "id": "guidaperte",
           "img-alt": "Maddalena Carnaghi - Guida turistica abilitata di Brescia e del lago di Garda e Iseo - La mia guida di Brescia - una guida per te",
@@ -907,7 +909,7 @@
         },
         "icon": "heart",
         "menu": "Una guida per te",
-        "nav": "2",
+        "nav": "1",
         "pageTitle": "Una guida per te!",
         "progetti.yaml": {
           "id": "progetti",
@@ -966,7 +968,8 @@
             }
           ]
         },
-        "tabTitle": "Una guida turistica abilitata di Brescia e del lago di Garda e Iseo per te"
+        "tabTitle": "Una guida turistica abilitata di Brescia e del lago di Garda e Iseo per te",
+        "title.txt": "La mia guia de Brescia - home guida es title"
       },
       "home": {
         "calendario.yaml": {
@@ -1119,6 +1122,8 @@
             }
           ]
         },
+        "homeESdfdkfkafsdfds.txt": "fsdlkfjasdlkfjsldfjslk fpsdifosdfo",
+        "homeESfdsiddddddeellle.txt": "fsdhlfshdlfsdjfkjsdlk",
         "icon": "house",
         "img-carousel.yaml": {
           "id": "imageCarousel",
@@ -1247,7 +1252,7 @@
           ]
         },
         "menu": "Home",
-        "nav": "1",
+        "nav": "2",
         "pageTitle": "La mia guida di Brescia",
         "preparazione.yaml": {
           "title2": "<em>In preparazione:</em>",
@@ -1344,7 +1349,8 @@
           "img-src": "home_regalaunavisita.jpg",
           "img-title": "Visita guidata della rocca di Sirmione - Itinerario turistico del castello scaligero - Tour di Sirmione - Maddalena Carnaghi - La mia guida di Brescia - regala una visita"
         },
-        "tabTitle": "Maddalena Carnaghi - La mia guida di Brescia - Una guida per te"
+        "tabTitle": "Maddalena Carnaghi - La mia guida di Brescia - Una guida per te",
+        "title.txt": "La mia guia de Brescia - home es title"
       },
       "itinerariclassici": {
         "description.txt": "",
@@ -3804,14 +3810,14 @@
   "navbar": {
     "es": {
       "1": {
-        "icon": "house",
-        "menu": "Home",
-        "name": "home"
-      },
-      "2": {
         "icon": "heart",
         "menu": "Una guida per te",
         "name": "guidaperte"
+      },
+      "2": {
+        "icon": "house",
+        "menu": "Home",
+        "name": "home"
       },
       "3": {
         "icon": "calendar",
