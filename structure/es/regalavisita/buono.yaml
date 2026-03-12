@@ -1,4 +1,7 @@
 id: buono
-subtitles: 
-- subtitle-smallfont-azzurrino: Regalate un buono per le mie visite guidate
-  subtitle-description: Il buono minimo corrisponde alla partecipazione a due tour ovvero 16 (8 euro + 8 euro) ma si può regalare anche un tour in esclusiva..parliamone!
+subtitles:
+- subtitle-id: '0'
+  subtitle-title: Regala un cupón para mis visitas guiadas
+  subtitle-smallfont1: "El cupón mínimo corresponde a la participación en dos tours
+    18 euros (9 euros + 9 euros), pero también puedes regalar una visita exclusiva
+    ¡Hablamolo!"

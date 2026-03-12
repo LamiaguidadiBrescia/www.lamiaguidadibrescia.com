@@ -10,20 +10,20 @@ img-title: Piede della Vittoria Alata - Visita guidata di Brescia romana/itinera
 subtitles:
 - subtitle-id: '0'
   subtitle-smallfont1: "Brescia, mi ciudad, y los lagos que la rodean,
-    Se prestan a diferentes tipos de visitas guiadas, descubre conmigo:"
+    se prestan a diferentes tipos de visitas guiadas, descubre conmigo:"
 vlinks:
 - vlink-id: '0'
   vlink-link: itinerariclassici
-  vlink-text: gli itinerari <strong>classici</strong>
+  vlink-text: "los itinerarios <strong>clásicos</strong>"
 - vlink-id: '1'
   vlink-link: itinerarididattici
-  vlink-text: gli itinerari <strong>didattici</strong>
+  vlink-text: los itinerarios <strong>educativos</strong>
 - vlink-id: '2'
   vlink-link: itineraritema
-  vlink-text: gli itinerari <strong>a tema</strong>
+  vlink-text: "los itinerarios <strong>temáticos</strong>"
 - vlink-id: '3'
   vlink-link: itineraristorici
-  vlink-text: gli itinerari <strong>storici</strong>
+  vlink-text: "los itinerarios <strong>históricos</strong>"
 - vlink-id: '4'
   vlink-link: itinerarilaghi
-  vlink-text: gli itinerari <strong>dei laghi</strong>
+  vlink-text: los itinerarios <strong>de los lagos</strong>

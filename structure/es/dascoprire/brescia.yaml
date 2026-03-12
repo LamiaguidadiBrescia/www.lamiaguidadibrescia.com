@@ -1,0 +1,19 @@
+title: Una colección de vídeos para descubrir Brescia
+id: brescia
+subtitles:
+- subtitle-id: '1'
+  subtitle-title: "El barrio Carmine"
+  subtitle-video: 'https://www.youtube.com/embed/DKBG_fWxU_g'
+  subtitle-smallfont1: "Un rincón realmente sorprendente, que nos permite evocar cómo vivía la gente en el pasado"
+- subtitle-id: '2'
+  subtitle-title: "La Strada del Soccorso"
+  subtitle-video: 'https://www.youtube.com/embed/X7tsP5tpUFM'
+  subtitle-smallfont1: "Para conocer el hermoso camino que, por desgracia, llevó a nuestra ciudad a capitular dos veces..."
+- subtitle-id: '3'
+  subtitle-title: "Las murallas de la ciudad"
+  subtitle-video: 'https://www.youtube.com/embed/PqojzoJZAXw'
+  subtitle-smallfont1: "Para entender cómo era la fisonomía de la ciudad en la época romana y cómo se ha transformado con el tiempo"
+- subtitle-id: '4'
+  subtitle-title: "La Fuente di Mompiano"
+  subtitle-video: 'https://www.youtube.com/embed/ddt5DhuLfvc'
+  subtitle-smallfont1: "Una joya poco conocida cuya historia está entrelazada con la evolución de nuestra ciudad"
